@@ -1,0 +1,11 @@
+// 2) Write a C program for computing factorial N (N!). 
+#include<stdio.h>
+void main(void){
+    int i , n , fact=1;
+    printf("please enter n :");
+    scanf("%d",&n);
+    for(i=n; i>=1; i--)
+        fact*=i;
+        
+    printf("factorial of number %d = %d\n",n,fact);    
+}
