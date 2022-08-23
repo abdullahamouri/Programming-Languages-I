@@ -1,0 +1,9 @@
+//  2) Calculate the area of a circle with given radius. //
+#include <stdio.h>
+void main(void){
+float p =3.14 , area , r;
+printf("please enter value of radius in float : ");
+scanf("%f",&r);
+area = p *r*r;
+printf("area = %f\n",area);
+}
