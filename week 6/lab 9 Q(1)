@@ -1,0 +1,16 @@
+// 1) Write a C program to find the largest of three numbers A, B, and C given
+from keyboard. 
+#include<stdio.h>
+void main(void){
+    int a , b , c;
+    printf("please enter 3 numbers :");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a > b && a > c)
+        printf("Max is : %d\n",a);
+    else if(b > a && b > c)
+        printf("Max is : %d\n",b);
+    else if(c > a && c > b)
+        printf("Max is : %d\n",c);
+    else
+        printf("There is no Max\n");
+}
