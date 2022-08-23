@@ -1,0 +1,7 @@
+// 7) Write C code to print the square of all numbers from 1 to10.
+#include<stdio.h>
+void main(void){
+    int i=1;
+    for(i=1; i<=10; i++)
+        printf("%d : %d\n",i,i*i);    
+}
