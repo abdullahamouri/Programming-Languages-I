@@ -1,0 +1,14 @@
+// 4) Determine Whether a Temperature is Below or Above the Freezing Point.
+#include<stdio.h>
+void main(void){
+    
+    int temp;
+    printf("please enter a Temperature : ");
+    scanf("%d",&temp);
+    if(temp > 0)
+        printf("Temperature is above then 0\n");
+    else if(temp < 0)
+        printf("Temperature is below then 0\n");
+    else
+        printf("Temperature is 0\n");
+}
