@@ -1,0 +1,11 @@
+// 1) Write C code to add two numbers entered by user.//
+
+#include <stdio.h>
+
+void main(void){
+    int x , y ,sum;
+    printf("please enter two numbers : ");
+    scanf("%d%d",&x,&y);
+    sum=x+y;
+    printf("%d + %d = %d\n",x,y,sum);
+}
