@@ -1,0 +1,8 @@
+//  6) Write C code to convert the length in feet to centimeter.
+void main(void){
+    float f , cm;
+    printf("please enter lenght in feet :");
+    scanf("%f",&f);
+     cm = (feet/3.26)*100;
+     printf("lenght in cm = %f",cm);
+}
