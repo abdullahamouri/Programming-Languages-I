@@ -1,5 +1,4 @@
-// 1) Write a C program to find the largest of three numbers A, B, and C given
-from keyboard. 
+// 1) Write a C program to find the largest of three numbers A, B, and C given from keyboard. 
 #include<stdio.h>
 void main(void){
     int a , b , c;
