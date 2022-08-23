@@ -1,0 +1,13 @@
+// 3) Determine and Output Whether Number N is Even or Odd. 
+#include <stdio.h>
+void main(void){
+    int x;
+    printf("pleaes enter a number : ");
+    scanf("%d",&x);
+    if(x % 2 == 0){
+        printf("%d is even\n",x);
+    }
+    else{
+        printf("%d is odd",x);
+    }
+}
