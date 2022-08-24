@@ -1,0 +1,29 @@
+/*Klavyeden -1 girilene kadar girilen sayıları diziye aktaran, ardından her elemanın karesini
+ekrana basan programı yazınız. (Dizi eleman sayısı max 10 olacaktır.)
+Write a program that transfers the numbers given until -1 is entered from the keyboard, and
+then prints the square of each element to the screen. (The number of array elements will be
+maximum 10.)*/
+
+#include<stdio.h>
+void main(void){
+    int n , arr[10] , i=0 , size;
+    printf("please enter a size of array : ");
+    scanf("%d",&size);
+    printf("please enter any number except -1: ");
+    scanf("%d",&n);
+    while(n != -1){
+        printf("Now please enter 10 numbers : \n");
+        for(i=0; i<size; i++){
+            printf("%d : ",i+1);
+            scanf("%d",&arr[i]);
+        }
+        printf("The square of elements of array is :\n");
+        for(i=0; i<size; i++){
+            printf("%d : %d\n",arr[i],arr[i]*arr[i]);
+            }
+        printf("please enter a number :\n");
+        printf("if you want stop the program please enter -1 : ");
+        fflush(stdin);
+        scanf("%d",&n);
+    }
+}
