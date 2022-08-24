@@ -1,0 +1,21 @@
+/*Maksimum 5 basamaklı sayının basamaklarındaki rakamları diziye atan ve ekrana basan
+programı yazınız.
+Write a program that assigns the digits of the maximum 5-digit number to an array and
+prints it to the screen.*/
+
+#include<stdio.h>
+void main(void){
+    int n , arr[5] , i=0 , rem=0 , j=0;
+    printf("please enter a number less then [100000] : ");
+    scanf("%d",&n);
+    printf("the elements of array from every single digit is : \n");
+    while(n <= 99999 && n != 0){
+        rem = n % 10;
+        arr[i] = rem;
+        i++;
+        n/=10;
+    }
+    printf("The elements of array after adding the digits is :\n");
+    for(j=i-1; j>=0; j--)
+        printf("%d\t",arr[j]);
+}
