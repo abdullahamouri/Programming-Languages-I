@@ -1,0 +1,19 @@
+/* 8 elemanlı float diziye klavyeden değer girin. Girilen değerlerin ortalamasını hesaplayıp
+ekrana yazdırın.
+Enter a value from the keyboard to the 8-element float array. Calculate the average of the
+entered values and print it on the screen.*/
+
+#include<stdio.h>
+void main(void){
+
+    float arr[8] , average=0 ,sum=0;
+    int i=0;
+    printf("please enter 8 numbers : \n");
+    for(i=0; i<8; i++){
+        printf("%d : ",i+1);
+        scanf("%f",&arr[i]);
+        sum+=arr[i];
+        average =sum / 8;
+    }
+    printf("The average of elements of array = %f\n",average);
+}
