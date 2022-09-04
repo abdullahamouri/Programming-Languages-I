@@ -1,0 +1,39 @@
+/* lab 11  Q3
+Write a program in C language that transfers the height and weight values of 10 students
+in a class to a two-dimensional array by reading them from the keyboard and calculates the average height and weight values and prints them on the screen.*/
+
+
+#include<stdio.h>
+void main(void){
+    float data[10][10];
+    float avg_h=0.0 , avg_w=0.0 , sum_h=0.0,sum_w=0.0;
+    int r=0 , c=0 , s_r ,s_c;
+    printf("please enter the size of rows [size < 10 ] : ");
+    scanf("%d",&s_r);
+    printf("please enter the size of columns [size < 10 ] : ");
+    scanf("%d",&s_c);
+    printf("please enter hight and weight value of 10 students : \n");
+    for(r=0; r<s_r; r++){
+        printf("Student %d : \t",r+1);
+        printf("Hight & weight : ");
+        for(c=0; c<s_c; c++){
+            scanf("%f",&data[r][c]);
+            if(c == 0)
+                sum_h = sum_h + data[r][c];
+             else
+                sum_w = sum_w + data[r][c];
+        }
+    }
+        // calculate the averages of hight and weight :
+    printf("The database of the hight and weights of %d student :\n\n",s_r);
+    for(r=0; r<s_r; r++){
+        for(c=0; c<s_c; c++){
+           printf("Student %d : %f\t",r+1,data[r][c]);
+        }
+        printf("\n");
+        }
+      avg_h = sum_h / s_r;
+      avg_w = sum_w / s_r;
+      printf("\nThe average of %d students's hight is : %f\n",s_r,avg_h);
+      printf("The average of %d students's width is : %f\n",s_r,avg_w);
+}
