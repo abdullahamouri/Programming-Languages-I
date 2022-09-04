@@ -1,0 +1,24 @@
+// Lab 11 Q1//
+/*Pentagon sayıları Pn=n(3n−1)/2 formülüne göre üretilmektedir. 100'den küçük pentagon sayılarını ekrana yazdırın.
+Pentagon numbers are produced according to the formula Pn=n(3n−1)/2. Print pentagon numbers less than 100 to the screen.*/
+
+#include<stdio.h>
+void main(void){
+    int i=1 , size , pn ,n;
+    printf("please enter a size of the loop : ");
+    scanf("%d",&size);
+    /*printf("Now please enter a number : ");
+    scanf("%d",&n);*/
+    printf("the pentagon numbers between 1 and %d are :\n",size);
+    i=1;
+    printf("the pentagon numbers between 1 and %d are :\n",size);
+    while(i < size){
+        pn = i*(3*i -1) / 2;
+        if(pn < size)
+            printf("%d\t",pn);
+        else
+            break;
+
+      i++;
+    }
+}
