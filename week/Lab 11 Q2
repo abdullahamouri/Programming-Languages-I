@@ -1,0 +1,36 @@
+//Lab 11 Q2
+//Aynı satır ve sütun sayısına sahip iki matrisi toplayan C kodunu yazınız. Matris değerleri klavyeden girilecek.
+//Write the C code that adds two matrices with the same number of rows and columns. Matrix values will be entered from the keyboard.
+
+#include<stdio.h>
+void main(void){
+    int data1[10][10] , data2[10][10] , data_sum[10][10];
+    int size_i , size_j , i , j;
+    printf("please enter the size of rows  [size < 10] : ");
+    scanf("%d",&size_i);
+    printf("please enter the size of columns [size < 10] : ");
+    scanf("%d",&size_j);
+    printf("Now please enter the values of 2 matrix : \n");
+    for(i=0; i<size_i; i++){
+            printf("row %d : ",i+1);
+        for(j=0; j<size_j; j++){
+            scanf("%d",&data1[i][j]);
+    }
+    }
+    printf("Second matrix : \n");
+    for(i=0; i<s_i; i++){
+            printf("row %d : ",i+1);
+        for(j=0; j<size_j; j++){
+            scanf("%d",&data2[i][j]);
+            data_sum[i][j] = data1[i][j] + data2[i][j];
+        }
+    }
+    printf("The sum matrix's values are : \n");
+    for(i=0; i<size_i; i++){
+            printf("Row %d :\t",i+1);
+        for(j=0; j<size_j; j++){
+                printf("%5d",data_sum[i][j]);
+        }
+        printf("\n");
+    }
+}
